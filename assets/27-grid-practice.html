@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 700px;
+            margin: 50px auto;
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 50px 150px 150px 100px;
+        }
+        .container > *{
+            background-color: hotpink;
+            padding: 1rem;
+            color: #fff;
+            border: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        header{
+          grid-column: 1 / 4;
+          
+        }
+        aside{
+          grid-row: 2/4;
+        }
+        .content1{
+           grid-column: 2/4;
+        }
+        .content2{
+
+        }
+        .content3{
+
+        }
+        footer{
+         grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <aside>Sidebar</aside>
+        <div class="content1">content 1</div>
+        <div class="content2">content 2</div>
+        <div class="content3">content 3</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
