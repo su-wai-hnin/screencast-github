@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-size: 14px;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .card {
+    background-color: var(--Grey-900);
+    max-width: 375px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    gap: 20px;
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 20px 40px;
+    }
+    h1 {
+      color: var(--White);
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+    .location {
+      color: var(--Green);
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 28px;
+    }
+    .bio {
+      color: var(--White);
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+
+      .btn {
+        display: block;
+        background-color: var(--Grey-800);
+        color: var(--White);
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 10px;
+        font-size: 10px;
+      }
+      .btn:hover{
+        background-color: var(--Green);
+        transition-duration: 0.2s;
+        color: black;
+      }
+    }
+  }
+}
